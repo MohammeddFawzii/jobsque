@@ -23,7 +23,8 @@ class WorkLocatinViewBody extends StatefulWidget {
   });
   String? userName;
   String? email;
-  String? jopTitle;
+    List<String>? jopTitle;
+
   String? registerMethode;
   String? password;
   @override
@@ -106,13 +107,15 @@ class _WorkLocatinViewBodyState extends State<WorkLocatinViewBody> {
               const Spacer(),
               Center(
                 child: CustomButton(
-                    onPressed: () {
+                    onPressed: () async{
                       if (widget.registerMethode == emailAndPasswordmethode &&
                           JopLocatinContainer.workloction.isNotEmpty) {
                         BlocProvider.of<RegisterCubit>(context)
                             .registerWithEmailAndPassword(
                           userModel: UserModel(
                               userName: widget.userName!,
+                              userPhoto:
+                                  "lib/Core/Utils/assets/images/profile-pic.png",
                               email: widget.email!,
                               wantedJop: widget.jopTitle!,
                               workLocation: JopLocatinContainer.workloction,

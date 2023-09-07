@@ -17,7 +17,8 @@ class workLocationViewBodyBlocConsumer extends StatelessWidget {
   });
   String? userName;
   String? email;
-  String? jopTitle;
+  
+  List<String>? jopTitle; 
   String? registerMethode;
   String? password;
   @override

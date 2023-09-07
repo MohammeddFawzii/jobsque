@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCIzdQQif7mqt9L7Tnstgd0b5g_8Z1iMlA',
-    appId: '1:536720564203:web:18e096f6d339cf283443ae',
-    messagingSenderId: '536720564203',
-    projectId: 'jopfinder-c3ac2',
-    authDomain: 'jopfinder-c3ac2.firebaseapp.com',
-    storageBucket: 'jopfinder-c3ac2.appspot.com',
-    measurementId: 'G-08FBMLTYHR',
+    apiKey: 'AIzaSyAdXxD1hxCl7y8xUtRuJON8ozpwwdqv7D0',
+    appId: '1:829323422004:web:18890262d1f30c94f59d61',
+    messagingSenderId: '829323422004',
+    projectId: 'jobsque-fc5cc',
+    authDomain: 'jobsque-fc5cc.firebaseapp.com',
+    storageBucket: 'jobsque-fc5cc.appspot.com',
+    measurementId: 'G-2S2E5N8JW4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAS0Lm7G6ZPBKrHLD4afArW6MVJjdDTcbU',
-    appId: '1:536720564203:android:c681596a5cb87f8f3443ae',
-    messagingSenderId: '536720564203',
-    projectId: 'jopfinder-c3ac2',
-    storageBucket: 'jopfinder-c3ac2.appspot.com',
+    apiKey: 'AIzaSyCdBPkZQvXJYAXMLroCigxfpasmIYvYOBk',
+    appId: '1:829323422004:android:b5aac8cc3d8483dff59d61',
+    messagingSenderId: '829323422004',
+    projectId: 'jobsque-fc5cc',
+    storageBucket: 'jobsque-fc5cc.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAWmFrznvBBijOUUolYvViQ_p92_lzJiww',
-    appId: '1:536720564203:ios:04bb34abfbfd13053443ae',
-    messagingSenderId: '536720564203',
-    projectId: 'jopfinder-c3ac2',
-    storageBucket: 'jopfinder-c3ac2.appspot.com',
-    iosClientId: '536720564203-rl68kcorur0v17ugdspnmf6c1hbrrd3n.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB01zCx2ixR-8p2igO5NaqRuougiij8Q54',
+    appId: '1:829323422004:ios:0bd4d68c2727b2e2f59d61',
+    messagingSenderId: '829323422004',
+    projectId: 'jobsque-fc5cc',
+    storageBucket: 'jobsque-fc5cc.appspot.com',
+    iosClientId: '829323422004-drkb4047lllgt0f5s9vgp3pcgne9vn2c.apps.googleusercontent.com',
     iosBundleId: 'com.example.jobsqueJobfinder',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAWmFrznvBBijOUUolYvViQ_p92_lzJiww',
-    appId: '1:536720564203:ios:2c9cad4cc24caaad3443ae',
-    messagingSenderId: '536720564203',
-    projectId: 'jopfinder-c3ac2',
-    storageBucket: 'jopfinder-c3ac2.appspot.com',
-    iosClientId: '536720564203-qki3i732ei0n4rdf41tebhpcel8didi0.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB01zCx2ixR-8p2igO5NaqRuougiij8Q54',
+    appId: '1:829323422004:ios:93f21f9b4ae3a771f59d61',
+    messagingSenderId: '829323422004',
+    projectId: 'jobsque-fc5cc',
+    storageBucket: 'jobsque-fc5cc.appspot.com',
+    iosClientId: '829323422004-goo5dl068deplhi1gon1vd6rs8dsfn21.apps.googleusercontent.com',
     iosBundleId: 'com.example.jobsqueJobfinder.RunnerTests',
   );
 }

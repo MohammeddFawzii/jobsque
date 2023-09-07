@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_instractions.dart';
-import 'package:jobsque_jobfinder/Features/forgot%20_password/views/check_emial_view.dart';
+import 'package:jobsque_jobfinder/Features/Forgot_Password/views/check_email_view.dart';
 
 import '../../../Core/Utils/app_colors.dart';
 import '../../../Core/Wedgits/custom_app_logo.dart';
@@ -94,7 +94,7 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
                 onPressed: () {
                   if (formkey.currentState!.validate()) {
                     formkey.currentState!.save();
-                    Navigator.pushNamed(context, CheckEmialView.id);
+                    Navigator.pushNamed(context, CheckEmailView.id);
                   } else {
                     setState(() {
                       autovalidateMode = AutovalidateMode.always;

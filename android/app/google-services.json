@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "536720564203",
-    "project_id": "jopfinder-c3ac2",
-    "storage_bucket": "jopfinder-c3ac2.appspot.com"
+    "project_number": "829323422004",
+    "project_id": "jobsque-fc5cc",
+    "storage_bucket": "jobsque-fc5cc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:536720564203:android:c681596a5cb87f8f3443ae",
+        "mobilesdk_app_id": "1:829323422004:android:b5aac8cc3d8483dff59d61",
         "android_client_info": {
           "package_name": "com.example.jobsque_jobfinder"
         }
       },
       "oauth_client": [
         {
-          "client_id": "536720564203-5pe0icq7f2hvthvl306993affpslunpa.apps.googleusercontent.com",
+          "client_id": "829323422004-fs1022rbdb3qvlcpp6227i0co9mj7pg7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAS0Lm7G6ZPBKrHLD4afArW6MVJjdDTcbU"
+          "current_key": "AIzaSyCdBPkZQvXJYAXMLroCigxfpasmIYvYOBk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "536720564203-5pe0icq7f2hvthvl306993affpslunpa.apps.googleusercontent.com",
+              "client_id": "829323422004-fs1022rbdb3qvlcpp6227i0co9mj7pg7.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "536720564203-qki3i732ei0n4rdf41tebhpcel8didi0.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.jobsqueJobfinder.RunnerTests"
-              }
             }
           ]
         }

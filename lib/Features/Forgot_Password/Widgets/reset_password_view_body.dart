@@ -7,7 +7,7 @@ import 'package:jobsque_jobfinder/Core/Wedgits/custom_appbarr.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_text_field.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custom_button.dart';
-import 'package:jobsque_jobfinder/Features/forgot%20_password/views/password_reset_successfully_view.dart';
+import 'package:jobsque_jobfinder/Features/Forgot_Password/views/password_reset_successfully_view.dart';
 
 class ResetPasswordViewBody extends StatefulWidget {
   const ResetPasswordViewBody({super.key});

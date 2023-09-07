@@ -10,6 +10,8 @@ import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_text_fi
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_auth_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_instractions.dart';
+
+import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Views/home_screen.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custom_button.dart';
 import '../../Cubits/SignIn/sign_in_cubit.dart';
 import '../../Widgets/custom_auth_basic_operation.dart';
@@ -120,10 +122,10 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                   height: 24,
                 ),
                 CustomButton(
-                  onPressed: () async{
-                    if (formkey.currentState!.validate()){
+                  onPressed: () async {
+                    if (formkey.currentState!.validate()) {
                       formkey.currentState!.save();
-                     await BlocProvider.of<SignInCubit>(context)
+                      await BlocProvider.of<SignInCubit>(context)
                           .singInWithEmailAndPassword(
                               username: userName, password: password);
                     } else {
