@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:jobsque_jobfinder/Core/Utils/constans.dart';
-import 'package:jobsque_jobfinder/Features/Authentication/Models/user_data_model.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Models/user_model.dart';
 
 Future<UserModel> fetchUserData(UserCredential userCredential) async {
   FirebaseFirestore firestore = FirebaseFirestore.instance;

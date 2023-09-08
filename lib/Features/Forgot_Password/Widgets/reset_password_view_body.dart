@@ -3,10 +3,10 @@ import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_logo.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_appbarr.dart';
+import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_bar.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_text_field.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
-import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custom_button.dart';
+import 'package:jobsque_jobfinder/Features/Onboarding/Widgets/custom_button.dart';
 import 'package:jobsque_jobfinder/Features/Forgot_Password/views/password_reset_successfully_view.dart';
 
 class ResetPasswordViewBody extends StatefulWidget {

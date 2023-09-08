@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:jobsque_jobfinder/Features/Authentication/Models/user_data_model.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Models/user_model.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/functions/sign_in_with_facebook.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/functions/store_user_data.dart';
 import 'package:meta/meta.dart';

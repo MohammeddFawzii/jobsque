@@ -4,12 +4,12 @@ import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Core/Utils/constans.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/work_location_view.dart';
-import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Widgets/job_tittle_box.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Widgets/job_name_box.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
-import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custom_button.dart';
+import 'package:jobsque_jobfinder/Features/Onboarding/Widgets/custom_button.dart';
 
-class JobTittleViewBody extends StatelessWidget {
-  JobTittleViewBody({
+class JobNameViewBody extends StatelessWidget {
+  JobNameViewBody({
     super.key,
     this.userName,
     this.email,
@@ -51,21 +51,21 @@ class JobTittleViewBody extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      JobTitleBox(
+                      JobNameBox(
                         jobIcon: Iconsax.bezier,
                         jobtitle: "UI/UX Designer",
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      JobTitleBox(
+                      JobNameBox(
                         jobIcon: Iconsax.code,
                         jobtitle: "Developer",
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      JobTitleBox(
+                      JobNameBox(
                         jobIcon: Iconsax.monitor_mobbile,
                         jobtitle: "Information Technology",
                       ),
@@ -73,21 +73,21 @@ class JobTittleViewBody extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      JobTitleBox(
+                      JobNameBox(
                         jobIcon: Iconsax.pen_tool,
                         jobtitle: "Ilustrator Designer",
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      JobTitleBox(
+                      JobNameBox(
                         jobIcon: Iconsax.graph,
                         jobtitle: "Management",
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      JobTitleBox(
+                      JobNameBox(
                         jobIcon: Iconsax.cloud_add,
                         jobtitle: "Research and Analytics",
                       ),
@@ -98,7 +98,7 @@ class JobTittleViewBody extends StatelessWidget {
               const Spacer(),
               CustomButton(
                   onPressed: () {
-                    if (JobTitleBox.joptitlepase.isNotEmpty) {
+                    if (JobNameBox.joptitlepase.isNotEmpty) {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -106,7 +106,7 @@ class JobTittleViewBody extends StatelessWidget {
                               userName: userName,
                               email: email,
                               registerMethode: registerMethode,
-                              jopTitle: JobTitleBox.joptitlepase,
+                              jopTitle: JobNameBox.joptitlepase,
                               password: password,
                             ),
                           ));

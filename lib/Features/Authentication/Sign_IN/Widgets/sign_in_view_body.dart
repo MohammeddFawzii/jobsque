@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_logo.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_appbarr.dart';
+import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_bar.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/register_view.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_authentication_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_text_field.dart';
@@ -11,8 +11,7 @@ import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_i
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_auth_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_instractions.dart';
 
-import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Views/home_screen.dart';
-import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custom_button.dart';
+import 'package:jobsque_jobfinder/Features/Onboarding/Widgets/custom_button.dart';
 import '../../Cubits/SignIn/sign_in_cubit.dart';
 import '../../Widgets/custom_auth_basic_operation.dart';
 

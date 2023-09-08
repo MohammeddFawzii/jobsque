@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/register_view.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Sign_IN/Views/sign_in_view.dart';
-import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/sucess_account_ilstration.dart';
-import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Views/home_screen.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/sucess_account_image.dart';
+import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Views/search_view.dart';
+import 'package:jobsque_jobfinder/Features/Jop_Details/views/apply_jop_view.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/Views/onboarding_view.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/Views/splash_view.dart';
 import 'package:jobsque_jobfinder/Features/Forgot_Password/views/check_email_view.dart';
@@ -13,6 +14,8 @@ import 'package:jobsque_jobfinder/Features/Forgot_Password/views/password_reset_
 import 'package:jobsque_jobfinder/Features/Forgot_Password/views/reset_password_view.dart';
 import 'package:jobsque_jobfinder/firebase_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'Features/Home_Screen&Search/Views/home_view.dart';
 
 // Import all packages
 
@@ -44,14 +47,15 @@ class JopFinderApp extends StatelessWidget {
         OnboardingView.id: (context) => const OnboardingView(),
         SignInView.id: (context) => const SignInView(),
         RegisterView.id: (context) => const RegisterView(),
-        SuccessAcountIlstrationView.id: (context) =>
-            const SuccessAcountIlstrationView(),
+        SuccessAcountImageView.id: (context) => const SuccessAcountImageView(),
         ForgotPasswordView.id: (context) => const ForgotPasswordView(),
         CheckEmailView.id: (context) => const CheckEmailView(),
         ResetPasswordView.id: (context) => const ResetPasswordView(),
         PasswordResetSuccessfullyView.id: (context) =>
             const PasswordResetSuccessfullyView(),
         HomeView.id: (context) => const HomeView(),
+        ApplyJopView.id: (context) => const ApplyJopView(),
+        SearchView.id: (context) => const SearchView(),
       },
       initialRoute: SplashView.id,
     );

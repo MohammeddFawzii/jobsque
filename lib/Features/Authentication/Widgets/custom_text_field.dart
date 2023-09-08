@@ -3,7 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../Core/Utils/app_colors.dart';
 import '../../../Core/Utils/app_fonts_styles.dart';
 import '../../../Core/Utils/constans.dart';
-import '../functions/text_field_border_decoration.dart';
+import '../functions/text_field_decoration.dart';
 
 class CustomTextField extends StatefulWidget {
   CustomTextField({

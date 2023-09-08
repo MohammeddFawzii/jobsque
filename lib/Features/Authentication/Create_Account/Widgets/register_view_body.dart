@@ -4,14 +4,14 @@ import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Core/Utils/constans.dart';
 import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_logo.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_appbarr.dart';
-import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/job_title_view.dart';
+import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_bar.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/job_name_view.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_authentication_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_auth_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_instractions.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/functions/show_snack_bar.dart';
-import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custom_button.dart';
+import 'package:jobsque_jobfinder/Features/Onboarding/Widgets/custom_button.dart';
 import '../../Widgets/custom_text_field.dart';
 
 class RegisterViewBody extends StatefulWidget {
@@ -170,7 +170,7 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => JobTitleView(
+                            builder: (context) => JobnameView(
                               userName: userName,
                               email: email,
                               registerMethode: emailAndPasswordmethode,
@@ -208,7 +208,7 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => JobTitleView(
+                      builder: (context) => JobnameView(
                         registerMethode: googleMethode,
                       ),
                     ),
@@ -218,14 +218,14 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => JobTitleView(
+                        builder: (context) => JobnameView(
                           registerMethode: facebookMethode,
                           email: emialData,
                         ),
                       ),
                     );
-                  }else{
-                     showSnackBar("email is required", context);
+                  } else {
+                    showSnackBar("email is required", context);
                   }
                 }),
                 const SizedBox(

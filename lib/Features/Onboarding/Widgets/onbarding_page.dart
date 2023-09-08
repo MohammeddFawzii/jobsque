@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/models/onboarding_model.dart';
 
-import '../../../../Core/Utils/app_colors.dart';
-import '../../../../Core/Utils/constans.dart';
+import '../../../Core/Utils/app_colors.dart';
+import '../../../Core/Utils/constans.dart';
 
-class CustomObardindPage extends StatelessWidget {
-  const CustomObardindPage({super.key, required this.onboardingModel});
+class OnboardingPage extends StatelessWidget {
+  const OnboardingPage({super.key, required this.onboardingModel});
   final OnboardingModel onboardingModel;
   @override
   Widget build(BuildContext context) {
@@ -56,8 +56,7 @@ class CustomObardindPage extends StatelessWidget {
             child: Text(
               onboardingModel.subTitle,
               style: AppFontsStyles.textstyle16.copyWith(
-                  color: 
-                AppColors.appNeutralColors500,
+                color: AppColors.appNeutralColors500,
               ),
             ),
           ),

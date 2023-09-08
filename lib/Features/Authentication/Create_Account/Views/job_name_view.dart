@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../Widgets/job_tittle_view_body.dart';
+import '../Widgets/job_name_view_body.dart';
 
-class JobTitleView extends StatelessWidget {
-  JobTitleView({
+class JobnameView extends StatelessWidget {
+  JobnameView({
     super.key,
     this.userName,
     this.email,
@@ -19,7 +19,7 @@ class JobTitleView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: JobTittleViewBody(
+          child: JobNameViewBody(
         userName: userName,
         email: email,
         password: password,

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 
-class JobTitleBox extends StatefulWidget {
-  const JobTitleBox({
+class JobNameBox extends StatefulWidget {
+  const JobNameBox({
     super.key,
     required this.jobIcon,
     required this.jobtitle,
   });
   final IconData jobIcon;
   final String jobtitle;
-   static List<String> joptitlepase = [];
+  static List<String> joptitlepase = [];
   @override
-  State<JobTitleBox> createState() => _JobTitleBoxState();
+  State<JobNameBox> createState() => _JobNameBoxState();
 }
 
-class _JobTitleBoxState extends State<JobTitleBox> {
+class _JobNameBoxState extends State<JobNameBox> {
   bool isSelected = false;
 
   @override
@@ -25,7 +25,7 @@ class _JobTitleBoxState extends State<JobTitleBox> {
         setState(() {
           isSelected = !isSelected;
           if (isSelected == true) {
-             JobTitleBox.joptitlepase.add(widget.jobtitle) ;
+            JobNameBox.joptitlepase.add(widget.jobtitle);
           }
         });
       },

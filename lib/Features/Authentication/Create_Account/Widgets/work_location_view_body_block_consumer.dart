@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/sucess_account_ilstration.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/sucess_account_image.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Widgets/work_location_view_body.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Cubits/Register/register_cubit.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/functions/show_snack_bar.dart';
@@ -17,8 +17,8 @@ class workLocationViewBodyBlocConsumer extends StatelessWidget {
   });
   String? userName;
   String? email;
-  
-  List<String>? jopTitle; 
+
+  List<String>? jopTitle;
   String? registerMethode;
   String? password;
   @override
@@ -30,7 +30,7 @@ class workLocationViewBodyBlocConsumer extends StatelessWidget {
         }
         if (state is RegisterSuccess) {
           showSnackBar("Registration complete seccessfully", context);
-          Navigator.pushNamed(context, SuccessAcountIlstrationView.id);
+          Navigator.pushNamed(context, SuccessAcountImageView.id);
         }
       },
       builder: (context, state) {

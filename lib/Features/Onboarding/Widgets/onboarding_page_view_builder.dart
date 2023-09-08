@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_images.dart';
-import 'package:jobsque_jobfinder/Features/Onboarding/Views/Widgets/custome_onbarding_page.dart';
+import 'package:jobsque_jobfinder/Features/Onboarding/Widgets/onbarding_page.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/models/onboarding_model.dart';
 
 class OnbardingPageView extends StatelessWidget {
@@ -39,7 +39,7 @@ class OnbardingPageView extends StatelessWidget {
       controller: pageController,
       itemCount: onbardingPagesdata.length,
       itemBuilder: (context, index) {
-        return CustomObardindPage(onboardingModel: onbardingPagesdata[index]);
+        return OnboardingPage(onboardingModel: onbardingPagesdata[index]);
       },
     );
   }

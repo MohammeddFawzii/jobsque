@@ -4,8 +4,8 @@ import 'package:jobsque_jobfinder/Features/Authentication/Sign_IN/Views/sign_in_
 import 'package:jobsque_jobfinder/Features/Onboarding/Views/onboarding_view.dart';
 import 'package:jobsque_jobfinder/main.dart';
 
-import '../functions/splash_navigation_controler.dart';
-import 'Widgets/circle_container.dart';
+import '../functions/splash_navigation_controller.dart';
+import '../Widgets/circle_container.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

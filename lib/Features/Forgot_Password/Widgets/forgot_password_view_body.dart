@@ -6,8 +6,8 @@ import 'package:jobsque_jobfinder/Features/Forgot_Password/views/check_email_vie
 
 import '../../../Core/Utils/app_colors.dart';
 import '../../../Core/Wedgits/custom_app_logo.dart';
-import '../../../Core/Wedgits/custom_appbarr.dart';
-import '../../Onboarding/Views/Widgets/custom_button.dart';
+import '../../../Core/Wedgits/custom_app_bar.dart';
+import '../../Onboarding/Widgets/custom_button.dart';
 import '../../Authentication/Widgets/custom_text_field.dart';
 
 class ForgotPasswordViewBody extends StatefulWidget {
