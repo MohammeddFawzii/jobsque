@@ -3,7 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Core/Utils/constans.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_bar.dart';
+import 'package:jobsque_jobfinder/Core/Wedgits/custom_barr.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/custom_Text.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/custom_filter_text_field.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_type_container.dart';

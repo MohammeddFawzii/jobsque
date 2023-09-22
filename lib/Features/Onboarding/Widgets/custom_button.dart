@@ -25,7 +25,7 @@ class CustomButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(1000),
         ),
-        minimumSize: const Size(327, 48),
+        minimumSize: const Size(double.infinity, 48),
         backgroundColor: buttonColor ?? AppColors.appPrimaryColors500,
       ),
       child: Text(

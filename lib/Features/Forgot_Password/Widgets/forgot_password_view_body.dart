@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_instractions.dart';
+import 'package:jobsque_jobfinder/Features/Forgot_Password/functions/send_reset_password_email.dart';
 import 'package:jobsque_jobfinder/Features/Forgot_Password/views/check_email_view.dart';
 
+
 import '../../../Core/Utils/app_colors.dart';
-import '../../../Core/Wedgits/custom_app_logo.dart';
-import '../../../Core/Wedgits/custom_app_bar.dart';
 import '../../Onboarding/Widgets/custom_button.dart';
 import '../../Authentication/Widgets/custom_text_field.dart';
 
@@ -29,20 +29,7 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           children: [
-            CustomAppBarr(
-              leftPart: IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                padding: EdgeInsets.zero,
-                alignment: Alignment.centerLeft,
-                icon: const Icon(
-                  Iconsax.arrow_left,
-                  color: Color(0xff292D32),
-                ),
-              ),
-              rightPart: const CustomAppLogo(),
-            ),
+           
             const SizedBox(
               height: 44,
             ),
@@ -91,9 +78,10 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
               height: 20,
             ),
             CustomButton(
-                onPressed: () {
+                onPressed: () async {
                   if (formkey.currentState!.validate()) {
                     formkey.currentState!.save();
+                    await sendResetPasswordEmail(email: email);
                     Navigator.pushNamed(context, CheckEmailView.id);
                   } else {
                     setState(() {

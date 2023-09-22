@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_logo.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_app_bar.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Create_Account/Views/register_view.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_authentication_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/custom_text_field.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/page_initail_info.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_auth_options.dart';
 import 'package:jobsque_jobfinder/Features/Authentication/Widgets/user_instractions.dart';
-
+import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Views/home_view.dart';
 import 'package:jobsque_jobfinder/Features/Onboarding/Widgets/custom_button.dart';
 import '../../Cubits/SignIn/sign_in_cubit.dart';
 import '../../Widgets/custom_auth_basic_operation.dart';
@@ -34,18 +32,13 @@ class _SignInViewBodyState extends State<SignInViewBody> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.only(
-          left: 24,
-          right: 24,
-        ),
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         child: SingleChildScrollView(
           child: Form(
             key: formkey,
             child: Column(
               children: [
-                const CustomAppBarr(
-                  rightPart: CustomAppLogo(),
-                ),
+              
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 44),
                   child: PageInitialinfo(
@@ -108,7 +101,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                 ),
                 const CustomAuthBasicOperation(),
                 Container(
-                  constraints: const BoxConstraints(minHeight: 173),
+                  constraints: const BoxConstraints(minHeight: 180),
                 ),
                 UserInstractions(
                   userDestenation: "Register",
@@ -124,9 +117,10 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                   onPressed: () async {
                     if (formkey.currentState!.validate()) {
                       formkey.currentState!.save();
-                      await BlocProvider.of<SignInCubit>(context)
-                          .singInWithEmailAndPassword(
-                              username: userName, password: password);
+                      Navigator.pushNamed(context, HomeView.id);
+                      //  await BlocProvider.of<SignInCubit>(context)
+                      //       .singInWithEmailAndPassword(
+                      //           username: userName, password: password);
                     } else {
                       setState(() {
                         autovalidateMode = AutovalidateMode.always;
@@ -142,9 +136,6 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                       (userNameData!.isNotEmpty && passwordData!.isNotEmpty)
                           ? Colors.white
                           : AppColors.appNeutralColors500,
-                ),
-                const SizedBox(
-                  height: 24,
                 ),
                 const SizedBox(
                   height: 20,
@@ -164,9 +155,6 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                         .signInFacebook();
                   },
                 ),
-                const SizedBox(
-                  height: 9,
-                )
               ],
             ),
           ),

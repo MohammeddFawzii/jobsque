@@ -37,7 +37,7 @@ abstract class AppImages {
   static const String passowrdresetsuccessfullly =
       "lib/Core/Utils/assets/images/PasswordSuccesfullyIlustration.png";
 
-        static const String searchIcon =
+  static const String searchIcon =
       "lib/Core/Utils/assets/images/searchnormal.png";
   static const String zoomIcon = "lib/Core/Utils/assets/images/ZoomLogo.png";
   static const String twitterIcon =
@@ -52,4 +52,54 @@ abstract class AppImages {
       "lib/Core/Utils/assets/images/InvisionLogo.png";
   static const String vKLogo = "lib/Core/Utils/assets/images/VKLogo.png";
   static const String userImage = "lib/Core/Utils/assets/images/userImage.jpg";
+
+  static const String tickCircle =
+      "lib/Core/Utils/assets/images/tick-circle.png";
+  static const String iconCheck = "lib/Core/Utils/assets/images/IconCheck.png";
+  static const String iconChecked =
+      "lib/Core/Utils/assets/images/IconChecked.png";
+  static const String pdfIcon = "lib/Core/Utils/assets/images/pdfIcon.svg";
+  static const String jopApliedSeccesfultyicon =
+      "lib/Core/Utils/assets/images/DataIlustration.svg";
+  static const String savedICon =
+      "lib/Core/Utils/assets/images/SavedIlustration.svg";
+  static const String danaLogo = "lib/Core/Utils/assets/images/danaLogo.png";
+  static const String shoopeLogo =
+      "lib/Core/Utils/assets/images/shoopeLogo.png";
+  static const String slackLogo1 = "lib/Core/Utils/assets/images/slackLogo.png";
+  static const String facebookLogo =
+      "lib/Core/Utils/assets/images/facebookLogo.png";
+  static const String danaLogo1 = "lib/Core/Utils/assets/images/danaLogo1.png";
+  static const String gojekLogo = "lib/Core/Utils/assets/images/gojekLogo.png";
+  static const String twitterLogo1 =
+      "lib/Core/Utils/assets/images/twitterLogo1.png";
+  static const String messagesData =
+      "lib/Core/Utils/assets/images/messageIlustration.svg";
+  static const String circleTwiterIcon =
+      "lib/Core/Utils/assets/images/circleTwiterIcon.png";
+  static const String notificationIcon =
+      "lib/Core/Utils/assets/images/NotificationIlustration.svg";
+  static const String profileSelectedIocn =
+      "lib/Core/Utils/assets/images/profile.svg";
+  static const String briefaceSelectedIcon =
+      "lib/Core/Utils/assets/images/briefcase.svg";
+  static const String englandsvg = "lib/Core/Utils/assets/images/england.svg";
+  static const String englandpng = "lib/Core/Utils/assets/images/england.png";
+  static const String netherlandspng =
+      "lib/Core/Utils/assets/images/netherlands.png";
+  static const String francepng = "lib/Core/Utils/assets/images/france.png";
+  static const String germanypng = "lib/Core/Utils/assets/images/germany.png";
+  static const String japanpng = "lib/Core/Utils/assets/images/japan.png";
+  static const String southKoreapng =
+      "lib/Core/Utils/assets/images/southKorea.png";
+  static const String portugalpng = "lib/Core/Utils/assets/images/portugal.png";
+  static const String noAppliedJopIcon =
+      "lib/Core/Utils/assets/images/noAppliedJopIcon.svg";
+  static const String completed = "lib/Core/Utils/assets/images/completed.svg";
+  static const String notCompleted =
+      "lib/Core/Utils/assets/images/notCompleted.svg";
+  static const String universityLogo =
+      "lib/Core/Utils/assets/images/universityLogo.png";
+  static const String companyLogo =
+      "lib/Core/Utils/assets/images/companyLogo.png";
 }

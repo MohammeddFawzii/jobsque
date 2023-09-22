@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Core/Utils/constans.dart';
-import 'package:jobsque_jobfinder/Core/Wedgits/custom_bar.dart';
+import 'package:jobsque_jobfinder/Core/Wedgits/custom_tap_par.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_details.dart';
+
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_features.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/models/suggested_jop_model.dart';
-
 import 'package:jobsque_jobfinder/Features/Jop_Details/views/apply_jop_view.dart';
 import 'package:jobsque_jobfinder/Features/Jop_Details/widgets/jop_company_view.dart';
 import 'package:jobsque_jobfinder/Features/Jop_Details/widgets/jop_discription_view.dart';
@@ -23,15 +22,6 @@ class JopDetailsViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          const SizedBox(height: 16),
-          const CustomBar(
-            leftPart: Iconsax.arrow_left,
-            centerPart: "Job Detail",
-            rightPart: Icon(
-              Iconsax.archive_minus5,
-              color: AppColors.appPrimaryColors500,
-            ),
-          ),
           const SizedBox(height: 32),
           Image.asset(width: 42, height: 42, jopModel.comunicationToolIcon),
           const SizedBox(height: 12),
@@ -53,26 +43,12 @@ class JopDetailsViewBody extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 32),
-          Container(
-            height: 50,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                color: AppColors.appNeutralColors100),
-            child: TabBar(
-                dividerColor: Colors.white,
-                indicatorSize: TabBarIndicatorSize.tab,
-                indicator: BoxDecoration(
-                    color: AppColors.appPrimaryColors900,
-                    borderRadius: BorderRadius.circular(100)),
-                labelColor: Colors.white,
-                unselectedLabelColor: AppColors.appNeutralColors500,
-                unselectedLabelStyle: AppFontsStyles.textstyle14
-                    .copyWith(fontFamily: textFamilyMedium),
-                tabs: const [
-                  Text("Desicription"),
-                  Text("Company"),
-                  Text("People"),
-                ]),
+          const CustomTapPar(
+            tabs: [
+              Text("Desicription"),
+              Text("Company"),
+              Text("People"),
+            ],
           ),
           const SizedBox(
             height: 24,
