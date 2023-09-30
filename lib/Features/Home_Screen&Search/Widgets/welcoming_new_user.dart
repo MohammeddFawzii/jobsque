@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
 import 'package:jobsque_jobfinder/Core/Utils/constans.dart';
+import 'package:jobsque_jobfinder/Core/functions/get_user_info.dart';
 
 class WelcomNewUser extends StatelessWidget {
   const WelcomNewUser({
@@ -18,12 +19,21 @@ class WelcomNewUser extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Hi, Rafif Dian👋",
-              style: AppFontsStyles.textstyle24.copyWith(
-                  fontFamily: textFamilyMedium,
-                  color: AppColors.appNeutralColors900),
+            FutureBuilder(
+              future: getUserName(),
+              builder: (context, snapshot) {
+                String name = snapshot.data ?? "unkown";
+                return Text(
+                  "Hi , $name",
+                  style: AppFontsStyles.textstyle24.copyWith(
+                      fontFamily: textFamilyMedium,
+                      color: AppColors.appNeutralColors900),
+                );
+              },
             ),
+            Text("👋",
+                style: AppFontsStyles.textstyle24
+                    .copyWith(fontFamily: textFamilyMedium)),
             Text(
               "Create a better future for yourself here",
               style: AppFontsStyles.textstyle14.copyWith(

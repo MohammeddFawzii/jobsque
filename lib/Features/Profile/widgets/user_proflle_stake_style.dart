@@ -1,8 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_images.dart';
 import 'package:jobsque_jobfinder/Core/Wedgits/custom_barr.dart';
+import 'package:jobsque_jobfinder/Features/Authentication/Sign_IN/Views/sign_in_view.dart';
 import 'package:jobsque_jobfinder/Features/Profile/widgets/circle_profile_image.dart';
 
 class UserProfileStakeStyle extends StatelessWidget {
@@ -30,7 +32,11 @@ class UserProfileStakeStyle extends StatelessWidget {
                         child: IconButton(
                             constraints:
                                 BoxConstraints.tight(const Size(37, 39)),
-                            onPressed: () {},
+                            onPressed: () async {
+                              await FirebaseAuth.instance.signOut();
+                              Navigator.pushReplacementNamed(
+                                  context, SignInView.id);
+                            },
                             icon: const Icon(
                               Iconsax.logout_1,
                               color: AppColors.appInDangerColors500,

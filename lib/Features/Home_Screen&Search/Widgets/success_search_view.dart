@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/search_result_list_view_builder.dart';
+import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/search_result_list_view_future_builder.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/search_seaction_bar.dart';
 
 import 'filter_option_list_view.dart';
@@ -25,7 +25,7 @@ class SuccessSearchView extends StatelessWidget {
         const SizedBox(
           height: 25,
         ),
-        SearchResultListViewBuilder()
+        SearchResultListViewFutureBuilder()
       ],
     );
   }

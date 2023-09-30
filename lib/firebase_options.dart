@@ -67,7 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '829323422004',
     projectId: 'jobsque-fc5cc',
     storageBucket: 'jobsque-fc5cc.appspot.com',
-    iosClientId: '829323422004-drkb4047lllgt0f5s9vgp3pcgne9vn2c.apps.googleusercontent.com',
+    iosClientId:
+        '829323422004-drkb4047lllgt0f5s9vgp3pcgne9vn2c.apps.googleusercontent.com',
     iosBundleId: 'com.example.jobsqueJobfinder',
   );
 
@@ -77,7 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '829323422004',
     projectId: 'jobsque-fc5cc',
     storageBucket: 'jobsque-fc5cc.appspot.com',
-    iosClientId: '829323422004-goo5dl068deplhi1gon1vd6rs8dsfn21.apps.googleusercontent.com',
+    iosClientId:
+        '829323422004-goo5dl068deplhi1gon1vd6rs8dsfn21.apps.googleusercontent.com',
     iosBundleId: 'com.example.jobsqueJobfinder.RunnerTests',
   );
 }

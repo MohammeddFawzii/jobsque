@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_colors.dart';
 import 'package:jobsque_jobfinder/Core/Utils/app_fonts_styles.dart';
+import 'package:jobsque_jobfinder/Core/Utils/app_images.dart';
+import 'package:jobsque_jobfinder/Core/Utils/my_flutter_app_icons.dart';
+import 'package:jobsque_jobfinder/Features/AplliedJop/views/applied_jop_view.dart';
+import 'package:jobsque_jobfinder/Features/Messages/views/messages_view.dart';
+import 'package:jobsque_jobfinder/Features/Profile/views/profile_view.dart';
+import 'package:jobsque_jobfinder/Features/Saved_Jop/views/saved_view.dart';
 
 import '../Widgets/home_view_body.dart';
 
@@ -15,6 +22,15 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
   int currentIndex = 0;
+
+  @override
+  List<Widget> views = [
+    const HomeViewBody(),
+    MessagesView(),
+    const AppliedJopView(),
+    const SavedView(),
+    const ProfileView()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -32,29 +48,30 @@ class _HomeViewState extends State<HomeView> {
           unselectedLabelStyle: AppFontsStyles.textstyle14,
           showUnselectedLabels: true,
           unselectedItemColor: AppColors.appNeutralColors400,
-          items: const [
-            BottomNavigationBarItem(
+          items: [
+            const BottomNavigationBarItem(
                 icon: Icon(Iconsax.home),
                 label: "Home",
                 activeIcon: Icon(Iconsax.home_15)),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Iconsax.message),
                 label: "message",
                 activeIcon: Icon(Iconsax.message5)),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Iconsax.briefcase),
               label: "Applied",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Iconsax.archive_minus),
               label: "Saved",
+              activeIcon: Icon(CustomFlutterIcons.archiveMinus),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Iconsax.user_square),
-              label: "Profile",
-            )
+                icon: const Icon(Iconsax.user_square),
+                label: "Profile",
+                activeIcon: SvgPicture.asset(AppImages.profileSelectedIocn))
           ]),
-      body: const SafeArea(child: HomeViewBody()),
+      body: SafeArea(child: views[currentIndex]),
     );
   }
 }

@@ -7,7 +7,6 @@ import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_detail
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_features.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/models/suggested_jop_model.dart';
 
-
 class JopInfoUnite1 extends StatefulWidget {
   const JopInfoUnite1({
     super.key,
@@ -29,7 +28,7 @@ class _JopInfoUnite1State extends State<JopInfoUnite1> {
       width: 300,
       height: 190,
       decoration: BoxDecoration(
-        color: widget.jopModel.containerColor ?? AppColors.appPrimaryColors900,
+        color: AppColors.appPrimaryColors900,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Padding(
@@ -38,19 +37,16 @@ class _JopInfoUnite1State extends State<JopInfoUnite1> {
           children: [
             Row(
               children: [
-                Image.asset(widget.jopModel.comunicationToolIcon),
+                Image.asset(widget.jopModel.jopImage),
                 const SizedBox(
                   width: 16,
                 ),
                 JopDetails(
-                  title: widget.jopModel.jopTitle,
-                  subtitel: widget.jopModel.comunicationtoolname,
-                  titleColor: widget.jopModel.containerColor != null
-                      ? AppColors.appNeutralColors900
-                      : Colors.white,
-                  subtitleColor: widget.jopModel.containerColor != null
-                      ? AppColors.appNeutralColors600
-                      : AppColors.appNeutralColors400,
+                  title: widget.jopModel.jopName,
+                  subtitel: widget.jopModel.jopType,
+                  
+                  titleColor: Colors.white,
+                  subtitleColor: AppColors.appNeutralColors400,
                 ),
                 const Spacer(),
                 IconButton(
@@ -63,9 +59,7 @@ class _JopInfoUnite1State extends State<JopInfoUnite1> {
                       Iconsax.archive_minus,
                       color: isArchived == true
                           ? AppColors.appPrimaryColors500
-                          : (widget.jopModel.containerColor != null
-                              ? AppColors.appNeutralColors900
-                              : Colors.white),
+                          : (Colors.white),
                     )),
               ],
             ),
@@ -73,15 +67,11 @@ class _JopInfoUnite1State extends State<JopInfoUnite1> {
               height: 20,
             ),
             JopFeatures(
-              workType: widget.jopModel.workType,
-              workNature: widget.jopModel.workNature,
-              jopSkill: widget.jopModel.jopSkill,
-              color: widget.jopModel.containerColor != null
-                  ? AppColors.appPrimaryColors100
-                  : AppColors.appNeutralColors300.withOpacity(0.3),
-              textColor: widget.jopModel.containerColor != null
-                  ? AppColors.appNeutralColors900
-                  : Colors.white,
+              workType: widget.jopModel.jopType,
+              workNature: widget.jopModel.jopTimeType,
+              jopSkill: widget.jopModel.jopSkills,
+              color: AppColors.appNeutralColors300.withOpacity(0.3),
+              textColor: Colors.white,
               rightdestenation: 24,
             ),
             const SizedBox(
@@ -97,18 +87,14 @@ class _JopInfoUnite1State extends State<JopInfoUnite1> {
                         text: widget.jopModel.salary,
                         style: AppFontsStyles.textstyle18.copyWith(
                           fontFamily: textFamilyMedium,
-                          color: widget.jopModel.containerColor != null
-                              ? AppColors.appNeutralColors900
-                              : Colors.white,
+                          color: Colors.white,
                         ),
                       ),
                       TextSpan(
-                        text: widget.jopModel.salaryTime,
+                        text: widget.jopModel.salary,
                         style: AppFontsStyles.textstyle12.copyWith(
                           fontFamily: textFamilyMedium,
-                          color: widget.jopModel.containerColor != null
-                              ? AppColors.appNeutralColors500
-                              : Colors.white.withOpacity(0.5),
+                          color: Colors.white.withOpacity(0.5),
                         ),
                       ),
                     ],

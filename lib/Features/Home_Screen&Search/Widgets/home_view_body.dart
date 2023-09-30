@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Views/search_view.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/custom_search_bar.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_section_bar.dart';
-import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_unit1_list_view_builder.dart';
-import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/jop_unit2_list_view_builder.dart';
+import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/horizontal_list_viwe_future_builder.dart';
+import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/vrtical_list_view_future_builder.dart';
 import 'package:jobsque_jobfinder/Features/Home_Screen&Search/Widgets/welcoming_new_user.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -52,8 +52,8 @@ class HomeViewBody extends StatelessWidget {
               height: 20,
             ),
           ),
-          SliverToBoxAdapter(
-            child: JopUnite1ListViewbuilder(),
+          const SliverToBoxAdapter(
+            child: JopUnite1ListViewFuturebuilder(),
           ),
           const SliverToBoxAdapter(
             child: SizedBox(
@@ -71,7 +71,9 @@ class HomeViewBody extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: JopUnite2ListViewbuilder(),
+            child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.9,
+                child: const JopUnite2ListViewFuturebuilder()),
           )
         ],
       ),
